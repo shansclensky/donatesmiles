@@ -5,6 +5,128 @@
 </head>
 <style>
 body{
+
+
+  background-image:url(https://static.pexels.com/photos/371633/pexels-photo-371633.jpeg);
+  background-repeat:no-repeat;
+  background-size: 100%;
+}
+{
+  margin: 0;
+  font-size: 28px;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Donate Smile</h2>
+  <p>Smile heals</p>
+</div>
+
+<div id="navbar">
+  <a class="active" href="javascript:void(0)">SmilesHome</a>
+  <a href="javascript:void(0)">Contributions Required</a>
+  <a href="javascript:void(0)">SmileScore</a>
+</div>
+
+<div class="content">
+  <h3>Smile  keepers</h3>
+  <!-- <p>The navbar will stick to the top when you reach its scroll position.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p> -->
+  <div class="panel panel-default">
+    <div class="panel-body">Donate Smiles is an NGO in India directly benefitting over 600,000 children and their families every year, through more than 250 live welfare projects on education, healthcare, livelihood and women empowerment, in over 950 remote villages and slums across 25 states of India.
+
+Education is both the means as well as the end to a better life: the means because it empowers an individual to earn his/her livelihood and the end because it increases one's awareness on a range of issues – from healthcare to appropriate social behaviour to understanding one's rights – and in the process help him/her evolve as a better citizen.
+
+Doubtless, education is the most powerful catalyst for social transformation. But child education cannot be done in isolation. A child will go to school only if the family, particularly the mother, is assured of healthcare and empowered. Moreover, when an elder sibling is relevantly skilled to be employable and begins earning, the journey of empowerment continues beyond the present generation.
+
+Realizing this, Smile Foundation an NGO in India, beginning in the corridors of education, adopted a lifecycle approach of development, focusing its interventions on children, their families and the larger community.
+
+Smile Foundation believes that unless members of the civil society are involved proactively in the process of development, sustainable change will not happen. Following this model of Civic Driven Change, Smile Foundation sensitizes and engages the civil society, making it an active partner in all its welfare initiatives.
+
+Today, 8 million children in India are out of school – surrounded by poverty, illness and despair; they are fighting a daily battle for their survival. Together, we can help a child and bring hope in their lives. Together, we can bring change and make it last.</div>
+
+Doubtless, education is the most powerful catalyst for social transformation. But child education cannot be done in isolation. A child will go to school only if the family, particularly the mother, is assured of healthcare and empowered. Moreover, when an elder sibling is relevantly skilled to be employable and begins earning, the journey of empowerment continues beyond the present generation.
+
+Realizing this, Smile Foundation an NGO in India, beginning in the corridors of education, adopted a lifecycle approach of development, focusing its interventions on children, their families and the larger community.
+
+Smile Foundation believes that unless members of the civil society are involved proactively in the process of development, sustainable change will not happen. Following this model of Civic Driven Change, Smile Foundation sensitizes and engages the civil society, making it an active partner in all its welfare initiatives.
+
+Today, 8 million children in India are out of school – surrounded by poverty, illness and despai
+
+  </div>
+</div>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+<!-- <style>
+body{
   background-image:url(https://static.pexels.com/photos/371633/pexels-photo-371633.jpeg);
   background-repeat:no-repeat;
   background-size: 100%;
@@ -79,8 +201,8 @@ background-color: #000000;
     </form>
   </div>
 </nav> -->
-<main>
-<div class="container my-5">
+<!-- <main> -->
+<!-- <div class="container my-5">
        <div class="card-body text-center">
     <h4 class="card-title">Smiles shared</h4>
   </div>
@@ -95,7 +217,7 @@ background-color: #000000;
               </tr>
             </thead>
         </table>
-            </div>
+            </div> --> -->
 
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
