@@ -1,217 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Organisation_list</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>org_list</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   </head>
-<body>
-  <!DOCTYPE html>
-<html lang="en">
-<head>
+  <body>
+    <div class="accordion" id="accordionExample">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Spacex #1
+            </button>
+          </h5>
+        </div>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-<style>
-  @import url(http://fonts.googleapis.com/css?family=News+Cycle:400,700);
-
-body
-{
-    padding-top: 30px;
-}
-
-h1
-{
-font-family: 'News Cycle', sans-serif;
-}
-article
-{
-    padding-bottom: 20px;
-}
-.article-caption
-{
-position: absolute;
-bottom: 16px;
-max-width: 90%;
-text-align: center;
-background-color: rgba(200,200,200,0.5);
-
-}
-
-.article-img
-{
-width: 100%;
-max-height: 400px;
-object-fit: cover;
-}
-
-
-@media screen and (max-width: 768px) {
-.article-title
-{
-font-size: 28px;
-}
-}
-
-@media screen and (max-width: 500px) {
-.article-title
-{
-font-size: 20px;
-}
-}
-
-.article-caption a
-{
-color: white;
-}
-</style>
-</head>
-<body>
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-
-
-  <div class="container">
-  	<div class="row">
-         <div class="row">
-  		<article class="col-md-6">
-      			<figure class="col-lg-12">
-  				<a href=""><img class="img img-responsive article-img" src="http://farm1.staticflickr.com/258/18511405422_d7c67c0ff8_k.jpg"></a>
-  				<figcaption class="article-caption"><h1 class="article-title"><a href="">Spacex #1</a></h1>
-  				</figcaption>
-  				</figure>
-  				<div class="article-intro col-lg-12" style="padding-top: 10px;">
-  				<strong>Space Exploration Technologies Corp., doing business as SpaceX, is a private American aerospace manufacturer and space transportation services company headquartered in Hawthorne, California. It was founded in 2002 by entrepreneur Elon Musk with the goal of reducing space transportation costs and enabling the colonization of Mars. SpaceX has since developed the Falcon launch vehicle family and the Dragon spacecraft family, which both currently deliver payloads into Earth orbit..</strong>
-  				</div>
-
-  				</article>
-
-                  <article class="col-md-6">
-          		<figure class="col-lg-12">
-  				<a href=""><img class="img img-responsive article-img" src="http://farm1.staticflickr.com/354/18141136234_6aee6ac0ea_k.jpg"></a>
-  				<figcaption class="article-caption"><h1 class="article-title"><a href="">Tesla #2</a></h1>
-  				</figcaption>
-  				</figure>
-
-  				<div class="article-intro col-lg-12" style="padding-top: 10px;">
-  				<strong>  Tesla, Inc. (formerly Tesla Motors), founded in 2003, is an American multinational corporation based in Palo Alto, California, that specializes in electric vehicles, lithium-ion battery energy storage and solar panel manufacturing (through the subsidiary company SolarCity). As of June 2018, Tesla sells the Tesla Model S, Model X, Model 3, Powerwall and Powerpack batteries, solar panels, solar roof tiles, and related products.
-            CEO Elon Musk said that he envisions Tesla as a technology company and independent automaker, aimed at eventually offering electric cars at prices affordable to the average consumer. The company was named for the electrical engineer and physicist Nikola Tesla by company founders Martin Eberhard and Marc Tarpenning.
-            
-          </strong>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            Space Exploration Technologies Corp., doing business as SpaceX, is a private American aerospace manufacturer and space transportation services company headquartered in Hawthorne, California. It was founded in 2002 by entrepreneur Elon Musk with the goal of reducing space transportation costs and enabling the colonization of Mars. SpaceX has since developed the Falcon launch vehicle family and the Dragon spacecraft family, which both currently deliver payloads into Earth orbit.
           </div>
         </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Tesla #2
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="card-body">
+            Tesla, Inc. (formerly Tesla Motors), founded in 2003, is an American multinational corporation based in Palo Alto, California, that specializes in electric vehicles, lithium-ion battery energy storage and solar panel manufacturing (through the subsidiary company SolarCity). As of June 2018, Tesla sells the Tesla Model S, Model X, Model 3, Powerwall and Powerpack batteries, solar panels, solar roof tiles, and related products.
+            CEO Elon Musk said that he envisions Tesla as a technology company and independent automaker, aimed at eventually offering electric cars at prices affordable to the average consumer. The company was named for the electrical engineer and physicist Nikola Tesla by company founders Martin Eberhard and Marc Tarpenning.
+            The company's Model S was the world's best-selling plug-in electric car in 2015 and 2016. Global sales of the Model S reached the 200,000 unit milestone during the fourth quarter of 2017. In September 2015, the company released its Model X, a crossover SUV. The Model 3 was released in July 2017. Tesla production passed 300,000 vehicles in February 2018.
+            Tesla operates multiple production and assembly plants, notably Gigafactory 1 near Reno, Nevada and its main vehicle manufacturing facility at Tesla Factory in Fremont, California. The Gigafactory primarily produces batteries and battery packs for Tesla vehicles and energy storage products.
           </div>
-
-  				</article>
-                  </div>
-
-                  <hr>
-
-                  <div class="row">
-                  <article class="col-md-6">
-          		<figure class="col-lg-12">
-  				<a href=""><img class="img img-responsive article-img" src="http://farm1.staticflickr.com/510/18737505996_98a20bf592_k.jpg"></a>
-  				<figcaption class="article-caption"><h1 class="article-title"><a href="">Hyperloop #3 </a></h1>
-  				</figcaption>
-  				</figure>
-  				<div class="article-intro col-lg-12" style="padding-top: 10px;">
-  				<strong>    A Hyperloop is a proposed mode of passenger and/or freight transportation, first used to describe an open-source vactrain design released by a joint team from Tesla and SpaceX. Drawing heavily from Robert Goddard's vactrain, a hyperloop is a sealed tube or system of tubes through which a pod may travel free of air resistance or friction conveying people or objects at high speed while being very efficient...</strong>
-  				</div>
-
-  				</article>
-
-                  <article class="col-md-6">
-          		<figure class="col-lg-12">
-  				<a href=""><img class="img img-responsive article-img" src="http://farm1.staticflickr.com/346/18328027128_704280cd4c_k.jpg"></a>
-  				<figcaption class="article-caption"><h1 class="article-title"><a href="">  The Boring Company #4</a></h1>
-  				</figcaption>
-  				</figure>
-
-  				<div class="article-intro col-lg-12" style="padding-top: 10px;">
-  				<strong>The Boring Company is an infrastructure and tunnel construction company founded by Elon Musk in 2016. Musk has cited difficulty with Los Angeles traffic and limitations with the current 2-D transportation network as inspiration for the project.</strong>
-  				</div>
-
-  				</article>
-                  </div>
-  	</div>
-  </div>
- <!-- <div class="container">
- <img src="home/osboxes/Documents/Charity-Foundation.jpg" class="img-circle" alt="Heal Smile" width="304" height="236">
- </div>
-
-<div class="container">
-  <h2>Donate Smiles</h2>
-  <div class="panel panel-default">
-    <div class="panel-body">Donate Smiles is an NGO in India directly benefitting over 600,000 children and their families every year, through more than 250 live welfare projects on education, healthcare, livelihood and women empowerment, in over 950 remote villages and slums across 25 states of India.
-
-Education is both the means as well as the end to a better life: the means because it empowers an individual to earn his/her livelihood and the end because it increases one's awareness on a range of issues – from healthcare to appropriate social behaviour to understanding one's rights – and in the process help him/her evolve as a better citizen.
-
-Doubtless, education is the most powerful catalyst for social transformation. But child education cannot be done in isolation. A child will go to school only if the family, particularly the mother, is assured of healthcare and empowered. Moreover, when an elder sibling is relevantly skilled to be employable and begins earning, the journey of empowerment continues beyond the present generation.
-
-Realizing this, Smile Foundation an NGO in India, beginning in the corridors of education, adopted a lifecycle approach of development, focusing its interventions on children, their families and the larger community.
-
-Smile Foundation believes that unless members of the civil society are involved proactively in the process of development, sustainable change will not happen. Following this model of Civic Driven Change, Smile Foundation sensitizes and engages the civil society, making it an active partner in all its welfare initiatives.
-
-Today, 8 million children in India are out of school – surrounded by poverty, illness and despair; they are fighting a daily battle for their survival. Together, we can help a child and bring hope in their lives. Together, we can bring change and make it last.</div>
-  </div>
-</div>
-
-</body>
-</html>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Hyperloop #3
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body">
+            A Hyperloop is a proposed mode of passenger and/or freight transportation, first used to describe an open-source vactrain design released by a joint team from Tesla and SpaceX. Drawing heavily from Robert Goddard's vactrain, a hyperloop is a sealed tube or system of tubes through which a pod may travel free of air resistance or friction conveying people or objects at high speed while being very efficient.
+            Elon Musk's version of the concept, first publicly mentioned in 2012, incorporates reduced-pressure tubes in which pressurized capsules ride on air bearings driven by linear induction motors and axial compressors.
 
 
-​<div class="container">
-  <h2>Smiles index</h2>
-  <table class="table">
-    <thead>
-      <tr>
-        <th>OrganisationName</th>
-        <th>Donar/Receiver</th>
-        <th>Donation_Required(in INR)</th>
-        <th>Donations_approved status</th>
-      </tr>
-    </thead>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+             The Boring Company #4
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body">
+            The Boring Company is an infrastructure and tunnel construction company founded by Elon Musk in 2016. Musk has cited difficulty with Los Angeles traffic and limitations with the current 2-D transportation network as inspiration for the project.
 
-    <tbody>
-      <tr>
-        <td>Spacex</td>
-        <td>Donar</td>
-        <td>123345</td>
-        <td>pending</td>
-    </tr>
-      <tr>
+          </div>
+        </div>
+      </div>
 
-        <td>Hyperloop</td>
-        <td>Receiver</td>
-        <td>32456</td>
-      <td>approved</td>
 
-      </tr>
+    </div>
 
-      <tr>
-        <td>tesla corparations</td>
-        <td>Donar</td>
-        <td>111234</td>
-        <td>pending </td>
-      </tr>
-    </tbody>
-  </table>
-</div> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-</body>
-
+  </body>
 </html>
+
 
 ​
